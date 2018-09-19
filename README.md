@@ -50,15 +50,33 @@ section {
 ~~~bash
 #! /usr/bin/env bash
 
-BASE_DIR="${HOME}/BootCampProjects/GitHub"
+# Define the Project Name and Folder Name.
 PROJECT_NAME='HW-Wireframe'
 
+# Define the parent location for the project files.
+BASE_DIR="${HOME}/BootCampProjects/GitHub"
+
+# Define the complete project location.
 PROJECT_DIR="${BASE_DIR}/${PROJECT_NAME}"
 
+# Make sure the parent project directory exists
 mkdir -p "${BASE_DIR}"
 
-hub init "${PROJECT_DIR}"
+# Change to the parent project path.
+cd "${BASE_DIR}"
 
-touch "${PROJECT_DIR}/index.html" "${PROJECT_DIR}/style.css"
+# Create the Git repository for the project, and setup the capability to
+# push changes to GitHub.
+hub init -g ${PROJECT_NAME}
 
+# Change into the project folder.
+cd "${PROJECT_DIR}"
+
+# Create the files needed in this project.
+touch index.html style.css
+
+# Add the project files to version control and push them to the GitHub
+# remote repository.
+git add . && git commit -m "Initial Project Setup"
+git push origin master
 ~~~
