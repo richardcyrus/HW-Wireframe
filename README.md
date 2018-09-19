@@ -22,7 +22,7 @@ A web design skeleton build using HTML/CSS
 body {
     background: #777;
     color: #777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
     width: 960px;
 }
@@ -41,7 +41,12 @@ article {
 }
 
 section {
-    width: 496px;
+    width: 495px;
+}
+
+h1, p {
+    color: #777;
+    background-color: #ebebeb;
 }
 ~~~
 
