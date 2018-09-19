@@ -1,0 +1,78 @@
+/* @group: body */
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #777;
+    color: #777;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* @group: elements */
+h1, p {
+    background-color: #ebebeb;
+    color: #777;
+    padding: 10px 0;
+    margin: 10px auto;
+}
+
+/* @group: main content containers */
+.page-container {
+    margin: 0 auto;
+    width: 960px;
+    text-align: center;
+}
+
+.page-header,
+.page-nav,
+.inner-section,
+.inner-aside,
+.page-footer {
+    background-color: #ebebeb;
+}
+
+.page-header,
+.page-nav,
+.page-footer {
+    padding: 30px 0;
+}
+
+.page-header,
+.page-nav {
+    margin: 10px 0 15px;
+}
+
+.page-footer {
+    margin-top: 15px;
+}
+
+/* @group: inner container split */
+.inner-container {
+    display: grid;
+    grid-template-columns: 495px auto;
+    column-gap: 15px;
+}
+
+/* @group: section & aside contents*/
+
+.inner-section,
+.inner-aside {
+    padding: 10px;
+}
+
+.section-header,
+.aside-header {
+    padding: 30px 0;
+}
+
+.section-article {
+    background-color: #777;
+    color: #ebebeb;
+    padding: 10px 15px;
+}
+
+.article-header {
+    padding: 10px 0;
+}
